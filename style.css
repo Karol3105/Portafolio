@@ -1,0 +1,331 @@
+:root {
+  --primary-color: #9470db; 
+  --secondary-color: #e8e6fa; 
+  --accent-color: #FFB6C1;
+  --background-color: #483D8B; 
+  --text-color: #F0F8FF; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.cursive-font {
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar {
+  background-color: rgba(72, 61, 139, 0.9);
+  transition: background-color 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(72, 61, 139, 1);
+}
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(72, 61, 139, 0.7), rgba(72, 61, 139, 0.7)), url('Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 5px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  transform: translateY(-3px);
+  animation: pulse 1s infinite;
+}
+
+.btn-outline-secondary {
+  color: var(--text-color);
+  border-color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  transform: translateY(-3px);
+  animation: pulse 1s infinite;
+}
+
+.feature-icon {
+  font-size: 4rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+}
+
+#habilidades .col-md-4 {
+  margin-bottom: 2rem;
+}
+
+.proyecto {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay color */
+  transition: background 0.3s ease; /* Smooth transition for overlay */
+}
+
+.proyecto:hover::before {
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}
+
+.proyecto .d-flex {
+  position: relative;
+  z-index: 1; /* Ensure content is above overlay */
+}
+
+.text-shadow-1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.project-description {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proyecto:hover .project-description {
+  opacity: 1;
+}
+
+#proyecto-1 {
+  background-image: url("Cloon.jpeg");
+}
+
+#proyecto-2 {
+  background-image: url("Mi\ Pagina.jpeg");
+}
+
+#proyecto-3 {
+  background-image: url("Portafolio.jpeg");
+}
+
+.text-shadow-1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.project-description {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proyecto:hover .project-description {
+  opacity: 1;
+}
+
+#testimonios {
+  background-color: var(--background-color);
+  padding: 4rem 0;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: scale(1.1);
+}
+
+#testimonios .carousel-item {
+  padding: 0 15%;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 3rem 0;
+}
+
+footer a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+#contact-form {
+  display: none;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* Estilos para el efecto de máquina de escribir */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid var(--accent-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-color); }
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+  #hero {
+      height: auto;
+      padding: 100px 0;
+  }
+  
+  .proyecto {
+      height: 250px;
+  }
+
+  #testimonios .carousel-item {
+      padding: 0 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+  
+  .lead {
+      font-size: 1rem;
+  }
+
+  .btn {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+/* Animaciones AOS personalizadas */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(100px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+/* Animación de pulso para botones */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Estilos adicionales para mejorar la apariencia general */
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 1rem auto 0;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el formulario de contacto */
+#contact-form .form-label {
+  font-weight: bold;
+}

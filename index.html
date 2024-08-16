@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karol Rocha - Desarrolladora Frontend</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand cursive-font" href="#">Karol Rocha</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <img src="Mi foto.jpeg" alt="Karol Rocha" class="img-fluid rounded-circle hero-img" data-aos="fade-right">
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="display-4 fw-bold mb-3 cursive-font typewriter" data-aos="fade-up">Karol Rocha</h1>
+                        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Desarrolladora frontend junior, apasionada por andar en bicicleta y por los perros y gatos por igual. Creadora de códigos nocturna, disfrutando tanto del trabajo en equipo como de la independencia en la resolución de problemas.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start" data-aos="fade-up" data-aos-delay="200">
+                            <a href="#contacto" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</a>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="copyEmail()">karolfatima3105@gmail.com</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 cursive-font" data-aos="fade-up">Habilidades</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <i class="bi bi-code-square feature-icon mb-3"></i>
+                            <h3>Desarrollo Web</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center">
+                            <i class="bi bi-people feature-icon mb-3"></i>
+                            <h3>Trabajo en Equipo</h3>
+                            <p>Colaboración y comunicación efectiva</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-center">
+                            <i class="bi bi-lightbulb feature-icon mb-3"></i>
+                            <h3>Creatividad</h3>
+                            <p>Soluciones innovadoras y diseño atractivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container px-4 py-5">
+            <h2 class="text-center mb-5 cursive-font" data-aos="fade-up">Proyectos</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div id="proyecto-1" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                            <p class="project-description">Replica funcional de la página principal de Google.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://clon-google-ho59-cwlytdnt9-karol-fatima-rocha-pizano-s-projects.vercel.app/" target="_blank" class="ps-3">Ver proyecto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div id="proyecto-2" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mi Pagina de Gustos </h3>
+                            <p class="project-description">Una página que refleja mis gustos y preferencias personales.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://mi-pagina-yfss-gbz1qv92b-karol-fatima-rocha-pizano-s-projects.vercel.app/" target="_blank" class="ps-3">Descubrir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div id="proyecto-3" class="proyecto card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Portafolio Personal</h3>
+                            <p class="project-description">Sitio web responsivo para mostrar mis proyectos.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="http://" target="_blank" class="ps-3">Explorar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 cursive-font" data-aos="fade-up">Testimonios</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" data-aos="fade-up">
+                        <div class="carousel-item active">
+                            <div class="d-flex align-items-center">
+                                <img src="Litzi.jpeg" alt="Testimonio 1" class="rounded-circle me-4" style="width: 100px;">
+                                <div>
+                                    <p class="fs-5">"Karol ha demostrado ser una alumna responsable y muy creativa durante el curso. Su interés por aprender la motiva a mejorar con cada proyecto que realiza."<em> Litzi Sánchez</em>.</p>
+                                    <h5 class="mt-4 fw-bold">Mentora Técnica en Tecnolochicas.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center">
+                                <img src="Dehi.jpeg" alt="Testimonio 2" class="rounded-circle me-4" style="width: 100px;">
+                                <div>
+                                    <p class="fs-5">"Karol se destaca por su excepcional capacidad de aprender y habilidad para abordar proyectos complejos con gran eficacia. Su capacidad para entender problemas y proponer soluciones es verdaderamente destacable. Trabajar con ella es siempre una experiencia enriquecedora y productiva."<em> José Dehilario</em>.</p>
+                                    <h5 class="mt-4 fw-bold">Coordinación de información y procesos en Talentum MX</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center">
+                                <img src="sam.jpeg" alt="Testimonio 3" class="rounded-circle me-4" style="width: 100px;">
+                                <div>
+                                    <p class="fs-5">"Trabajar con Karol ha sido una experiencia fructífera y de aprendizajes, su colaboración hace el trabajo más ameno y eficaz, sus propuestas para solucionar problemáticas son innovadoras y de gran utilidad para hacer frente a las dificultades que se deben enfrentar."<em> Sam Cornejo</em>.</p>
+                                    <h5 class="mt-4 fw-bold"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto" class="py-4">
+        <div class="container text-center">
+            <h2 class="mb-4">Contacto</h2>
+            <div class="mb-4">
+                <a href="https://github.com/Karol3105" class="text-white me-3"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://www.linkedin.com/in/karol-rocha-pizano/" class="text-white me-3"><i
+                        class="bi bi-linkedin fs-3"></i></a>
+                <a href="https://www.instagram.com/karol.rocha.182940/" class="text-white me-3"><i
+                        class="bi bi-instagram fs-3"></i></a>
+            </div>
+            <p>&copy; 2024 KAROL ROCHA. TECHNOLOCHICAS PRO</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
